@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 
+const os = require('os');
 const data = require('./data');
 
 app.get('/persons', (req, res) => {
@@ -12,6 +13,7 @@ app.get('/person/:id', (req, res) => {
     if(isNaN(personId)){
         res.json({
             error: "The person ID is not valid",
+            from: os.hostname(),
             data: null,
         });
     } else {
@@ -19,6 +21,7 @@ app.get('/person/:id', (req, res) => {
         person = (person !== undefined ? person : null);
         res.json({
             error: null,
+            from: os.hostname(),
             data: person,
         });
     }
