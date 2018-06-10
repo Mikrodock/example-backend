@@ -1,0 +1,24 @@
+{
+  "name": "mikrodock-example-backend",
+  "version": "1.0.0",
+  "description": "Example for Mikrodock : backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mikrodock/example-backend.git"
+  },
+  "keywords": [
+    "mikrodock",
+    "node",
+    "backend"
+  ],
+  "author": "Nicolas Surleraux",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Mikrodock/example-backend/issues"
+  },
+  "homepage": "https://github.com/Mikrodock/example-backend#readme"
+}
